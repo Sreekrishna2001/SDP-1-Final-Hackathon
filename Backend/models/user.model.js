@@ -30,7 +30,11 @@ const UserSchema = new mongoose.Schema({
             type: Number,
             required: true
         }
-    }]
+    }],
+    adminstatus: {
+        type: Boolean,
+        default: false
+    }
 });
 
 

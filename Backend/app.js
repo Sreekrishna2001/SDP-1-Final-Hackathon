@@ -117,11 +117,7 @@ let verifySession = (req, res, next) => {
 app.get('/lists', authenticate, (req, res) => {
     // We want to return an array of all the lists that belong to the authenticated user 
     List.find({
-<<<<<<< HEAD
         
-=======
-        _userId: req.user_id
->>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
     }).then((lists) => {
         res.send(lists);
     }).catch((e) => {
@@ -169,11 +165,7 @@ app.delete('/lists/:id', authenticate, (req, res) => {
     // We want to delete the specified list (document with id in the URL)
     List.findOneAndRemove({
         _id: req.params.id,
-<<<<<<< HEAD
         
-=======
-        _userId: req.user_id
->>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
     }).then((removedListDoc) => {
         res.send(removedListDoc);
 
@@ -205,12 +197,7 @@ app.post('/lists/:listId/tasks', authenticate, (req, res) => {
     // We want to create a new task in a list specified by listId
 
     List.findOne({
-<<<<<<< HEAD
         _id: req.params.listId
-=======
-        _id: req.params.listId,
-        _userId: req.user_id
->>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
     }).then((list) => {
         if (list) {
             // list object with the specified conditions was found
@@ -235,10 +222,7 @@ app.post('/lists/:listId/tasks', authenticate, (req, res) => {
     })
 })
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
 /**
  * PATCH /lists/:listId/tasks/:taskId
  * Purpose: Update an existing task
@@ -364,7 +348,6 @@ app.post('/users/login', (req, res) => {
             });
         }).then((authTokens) => {
             // Now we construct and send the response to the user with their auth tokens in the header and the user object in the body
-<<<<<<< HEAD
            /*  if(email=="maremandasreekrishna@gmail.com"){
                 let adminStatus=true
                 let admin=[...User]
@@ -378,12 +361,6 @@ app.post('/users/login', (req, res) => {
                 .header('x-access-token', authTokens.accessToken)
                 .send(user);
            
-=======
-            res
-                .header('x-refresh-token', authTokens.refreshToken)
-                .header('x-access-token', authTokens.accessToken)
-                .send(user);
->>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
         })
     }).catch((e) => {
         res.status(400).send(e);
@@ -404,15 +381,12 @@ app.get('/users/me/access-token', verifySession, (req, res) => {
     });
 })
 
-<<<<<<< HEAD
 // app.put('/updateuser/:id',(req,res) => {
 //     User.findByIdAndUpdate(req.params.id, {$set: req.body}, {new: true})
 //     .then(resp => {res.send(resp)})
 //     .catch(err => console.log(err));
 // })
 
-=======
->>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
 
 
 /* HELPER METHODS */
@@ -420,11 +394,7 @@ let deleteTasksFromList = (_listId) => {
     Task.deleteMany({
         _listId
     }).then(() => {
-<<<<<<< HEAD
         console.log("Review from " + _listId + " were deleted!");
-=======
-        console.log("Tasks from " + _listId + " were deleted!");
->>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
     })
 }
 
