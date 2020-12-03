@@ -11,7 +11,10 @@ import { shareReplay, tap } from 'rxjs/operators';
 export class AuthService {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   adminstatus=false;
+=======
+>>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
 =======
 >>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
   constructor(private webService: WebRequestService, private router: Router, private http: HttpClient) { }
@@ -23,8 +26,11 @@ export class AuthService {
         // the auth tokens will be in the header of this response
         this.setSession(res.body._id, res.headers.get('x-access-token'), res.headers.get('x-refresh-token'));
 <<<<<<< HEAD
+<<<<<<< HEAD
         console.log(res);
         
+=======
+>>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
 =======
 >>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
         console.log("LOGGED IN!");
@@ -73,7 +79,10 @@ export class AuthService {
     localStorage.setItem('x-access-token', accessToken);
     localStorage.setItem('x-refresh-token', refreshToken);
 <<<<<<< HEAD
+<<<<<<< HEAD
     
+=======
+>>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
 =======
 >>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
   }
@@ -83,7 +92,10 @@ export class AuthService {
     localStorage.removeItem('x-access-token');
     localStorage.removeItem('x-refresh-token');
 <<<<<<< HEAD
+<<<<<<< HEAD
     localStorage.removeItem('adminstatus');
+=======
+>>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
 =======
 >>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
   }

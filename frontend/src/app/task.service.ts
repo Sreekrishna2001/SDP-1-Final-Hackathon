@@ -39,8 +39,12 @@ export class TaskService {
 
   getTasks(listId: string) {
 <<<<<<< HEAD
+<<<<<<< HEAD
     let res= this.webReqService.get(`lists/${listId}/tasks`);
     return res;
+=======
+    return this.webReqService.get(`lists/${listId}/tasks`);
+>>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
 =======
     return this.webReqService.get(`lists/${listId}/tasks`);
 >>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79

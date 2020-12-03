@@ -4,7 +4,10 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
 import { Task } from 'src/app/models/task.model';
 import { List } from 'src/app/models/list.model';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { AuthService } from '../../auth.service';
+=======
+>>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
 =======
 >>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
 
@@ -17,6 +20,7 @@ export class TaskViewComponent implements OnInit {
 
   lists: List[];
   tasks: Task[];
+<<<<<<< HEAD
 <<<<<<< HEAD
   con=false;
 
@@ -38,12 +42,17 @@ export class TaskViewComponent implements OnInit {
     }
     console.log(this.adminstatus);
 =======
+=======
+>>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
 
   selectedListId: string;
 
   constructor(private taskService: TaskService, private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {
+<<<<<<< HEAD
+>>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
+=======
 >>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
     this.route.params.subscribe(
       (params: Params) => {
@@ -87,6 +96,7 @@ export class TaskViewComponent implements OnInit {
     })
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
   logout()
   {
@@ -96,6 +106,8 @@ export class TaskViewComponent implements OnInit {
     localStorage.removeItem('adminstatus');
     this.router.navigate(['/login']);
   }
+=======
+>>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
 =======
 >>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
 }

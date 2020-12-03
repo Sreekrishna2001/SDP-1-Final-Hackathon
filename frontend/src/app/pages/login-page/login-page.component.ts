@@ -10,7 +10,10 @@ import { Router } from '@angular/router';
 })
 export class LoginPageComponent implements OnInit {
 <<<<<<< HEAD
+<<<<<<< HEAD
   
+=======
+>>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
 =======
 >>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
 
@@ -18,7 +21,10 @@ export class LoginPageComponent implements OnInit {
 
   ngOnInit() {
 <<<<<<< HEAD
+<<<<<<< HEAD
     this.authService.adminstatus=false;
+=======
+>>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
 =======
 >>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
   }
@@ -28,7 +34,10 @@ export class LoginPageComponent implements OnInit {
       if (res.status === 200) {
         // we have logged in successfully
 <<<<<<< HEAD
+<<<<<<< HEAD
         localStorage.setItem('adminstatus',res.body.adminstatus);
+=======
+>>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
 =======
 >>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
         this.router.navigate(['/lists']);

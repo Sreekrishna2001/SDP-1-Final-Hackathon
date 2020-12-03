@@ -19,7 +19,10 @@ export class SignupPageComponent implements OnInit {
     this.authService.signup(email, password).subscribe((res: HttpResponse<any>) => {
       console.log(res);
 <<<<<<< HEAD
+<<<<<<< HEAD
       localStorage.setItem('adminstatus',res.body.adminstatus);
+=======
+>>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
 =======
 >>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
       this.router.navigate(['/lists']);

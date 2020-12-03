@@ -7,7 +7,11 @@ import { TaskViewComponent } from './pages/task-view/task-view.component';
 
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { NewRestaurantComponent } from './pages/new-Restaurant/new-Restaurant.component';
+=======
+import { NewListComponent } from './pages/new-list/new-list.component';
+>>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
 =======
 import { NewListComponent } from './pages/new-list/new-list.component';
 >>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
@@ -18,7 +22,10 @@ import { SignupPageComponent } from './pages/signup-page/signup-page.component';
 import { EditListComponent } from './pages/edit-list/edit-list.component';
 import { EditTaskComponent } from './pages/edit-task/edit-task.component';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { StatisticsComponent } from './statistics/statistics.component';
+=======
+>>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
 =======
 >>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
 
@@ -27,7 +34,11 @@ import { StatisticsComponent } from './statistics/statistics.component';
     AppComponent,
     TaskViewComponent,
 <<<<<<< HEAD
+<<<<<<< HEAD
     NewRestaurantComponent,
+=======
+    NewListComponent,
+>>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
 =======
     NewListComponent,
 >>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
@@ -36,8 +47,12 @@ import { StatisticsComponent } from './statistics/statistics.component';
     SignupPageComponent,
     EditListComponent,
 <<<<<<< HEAD
+<<<<<<< HEAD
     EditTaskComponent,
     StatisticsComponent
+=======
+    EditTaskComponent
+>>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
 =======
     EditTaskComponent
 >>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79

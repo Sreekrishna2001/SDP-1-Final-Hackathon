@@ -2,7 +2,11 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { TaskViewComponent } from './pages/task-view/task-view.component';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { NewRestaurantComponent } from './pages/new-Restaurant/new-Restaurant.component';
+=======
+import { NewListComponent } from './pages/new-list/new-list.component';
+>>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
 =======
 import { NewListComponent } from './pages/new-list/new-list.component';
 >>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
@@ -15,7 +19,11 @@ import { EditTaskComponent } from './pages/edit-task/edit-task.component';
 const routes: Routes = [
   { path: '', redirectTo: '/lists', pathMatch: 'full' },
 <<<<<<< HEAD
+<<<<<<< HEAD
   { path: 'new-list', component: NewRestaurantComponent },
+=======
+  { path: 'new-list', component: NewListComponent },
+>>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
 =======
   { path: 'new-list', component: NewListComponent },
 >>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
