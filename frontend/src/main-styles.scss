@@ -14,7 +14,6 @@ $light: #f8f8f8;
 // Update Bulma's global variables
 $family-sans-serif: "Nunito", sans-serif;
 $primary: $green;
-
 $link: $turquoise;
 
 
@@ -33,16 +32,14 @@ html {
 
 html, body {
     height: 100%;
-<<<<<<< HEAD
-<<<<<<< HEAD
     margin-top: -18px;
     margin-bottom:18px;
+    background-image: url("https://cdn.pixabay.com/photo/2018/07/09/09/34/pizza-3525673_960_720.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 
-   
-=======
->>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
-=======
->>>>>>> 84ef65cc20347f4f3fda13eed9f08d5c78919a79
+
+
 }
 
 .centered-content {
