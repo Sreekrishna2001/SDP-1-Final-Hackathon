@@ -1,0 +1,55 @@
+<!-- <mat-tab-group class="back">
+  <mat-tab label="First"> 
+        
+  </mat-tab>
+  <mat-tab label="Second">
+ 
+  </mat-tab>
+  <mat-tab label="Third">  </mat-tab>
+  <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+</mat-tab-group> -->
+
+
+
+<div class="back">
+  <div>
+    <h1 style="margin: 5px;color:white;font-size:40px; margin-left: 45%;">B4-EAT</h1>
+    <button style="float: right; margin-right: 10px;" routerLink="/statistics" mat-raised-button color="Accent">View
+      Statistics</button>
+    <button style="float: right; margin-right: 10px;" routerLink="/login" mat-raised-button
+      color="Accent">LogOut</button>
+    <button style="float: right; margin-right: 10px;" routerLink="/aboutus" mat-raised-button color="Accent">About
+      Us</button>
+  </div>
+
+
+  <input #searchval class="example-full-width" placeholder="Search Here">
+  <button mat-raised-button color="primary" style="height: 35px; margin-left: 8px;"
+    (click)="onsearch(searchval.value)">Search</button>
+  <div class="alignment">
+    <div class="top" *ngFor="let lis of list;">
+      <div>
+        <mat-card class="example-card">
+          <mat-card-header>
+            <mat-card-title>{{lis.Name}}</mat-card-title>
+            <mat-card-subtitle>{{lis.Rating}}
+              <button mat-icon-button color="warn" aria-label="Example icon button with a heart icon">
+                <mat-icon>favorite</mat-icon>
+              </button>
+            </mat-card-subtitle>
+
+          </mat-card-header>
+          <div style="margin: 15px; width: 350px; height: 250px;">
+            <img mat-card-image style=" width: 380px; height: 270px;" src={{lis.Url}}>
+          </div>
+          <mat-card-content>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button color="primary" (click)="Review(lis)">VIEW DETAILS </button>
+            <button routerLink="/viewdetails" mat-button color="primary">REVIEW</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>
