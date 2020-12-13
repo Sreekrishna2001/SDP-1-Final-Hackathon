@@ -1,0 +1,64 @@
+<app-header></app-header>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+
+<div class="back">
+
+
+    <div  class="input-group mb-3 searchbar1">
+        <input #searchval type="text" class="form-control" placeholder="Restaurant's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button class="btn btn-dark" type="button" id="button-addon2" (click)="onsearch(searchval.value)">Search</button>
+    </div>
+
+    <!-- <div class="alignment">
+    <div class="top" *ngFor="let lis of list;">
+        <div class="card" style="margin: 15px; width: 350px; height: 500px;">
+            <img src={{lis.Url}} class="card-img-top" style=" width: 380px; height: 270px;" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{lis.Name}}</h5>
+                <div class="demo" style="display: inline-flex ">
+                    <span class="rating">
+          <p class="card-text">{{lis.Rating}}</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+          </svg>
+        </span>
+                </div>
+                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                    <button type="button" class="btn btn-primary" (click)="Review(lis)">VIEW DETAILS</button>
+                    <button type="button" class="btn btn-warning">REVIEW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+    <div class="alignment">
+        <div class="top" *ngFor="let lis of list;">
+            <div>
+                <mat-card class="example-card">
+                    <mat-card-header>
+                        <mat-card-title>{{lis.Name}}</mat-card-title>
+                        <mat-card-subtitle>{{lis.Rating}}
+                            <button mat-icon-button color="warn" aria-label="Example icon button with a heart icon">
+              <mat-icon>favorite</mat-icon>
+            </button>
+                        </mat-card-subtitle>
+
+                    </mat-card-header>
+                    <div style="margin: 15px; width: 350px; height: 250px;">
+                        <img mat-card-image style=" width: 380px; height: 270px;" src={{lis.Url}}>
+                    </div>
+                    <mat-card-content>
+                    </mat-card-content>
+                    <mat-card-actions class="gap 2">
+                        <button class="btn  mat-a-btn col" color="primary" (click)="Review(lis)">VIEW DETAILS </button>
+                        <button routerLink="/booking" class="btn  mat-a-btn col " color="primary" (click)="onbook(lis)">Book Now</button>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</div>

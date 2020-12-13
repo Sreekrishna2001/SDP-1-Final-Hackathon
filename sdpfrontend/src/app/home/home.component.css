@@ -1,0 +1,64 @@
+.searchbar1 {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 30px;
+}
+
+.example-card {
+    max-width: 400px;
+}
+
+.example-header-image {
+    background-size: cover;
+}
+
+.align {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top {
+    display: inline-flex;
+    margin: 7px;
+}
+
+.alignment {
+    margin-left: 8%;
+}
+
+.back {
+    /* margin-top: -18px;
+margin-bottom:18px; */
+    background: #f12711; 
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711); 
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f5af19, #f12711);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background-image: url("https://cdn.pixabay.com/photo/2018/07/09/09/34/pizza-3525673_960_720.jpg");
+ background-attachment: fixed;
+  background-size: 100% 100%;
+  background-repeat: no-repeat; */
+}
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.example-full-width {
+    width: 40%;
+    background-color: white;
+    margin-left: 8.5%;
+    height: 35px;
+}
+
+.mat-a-btn {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+mat-card-actions {
+    justify-content: center;
+}
